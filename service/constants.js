@@ -8,6 +8,6 @@ module.exports = Object.freeze({
     unprocessableEntity: 422,
     internalServerError: 500,
   },
-  successCode: 'success',
-  failureCode: 'failure',
+  successCode: "success",
+  failureCode: "failure",
 });

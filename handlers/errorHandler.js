@@ -54,7 +54,9 @@ exports.developmentErrors = (err, req, res, next) => {
     stack: err.stack,
   };
 
-  res.status(err.status || constants.responseStatusCode.internalServerError).json(errorDetails); // send JSON back
+  res
+    .status(err.status || constants.responseStatusCode.internalServerError)
+    .json(errorDetails); // send JSON back
 };
 
 /*
